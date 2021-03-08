@@ -1,3 +1,11 @@
+My first react App.
+
+A personal portfolio.
+
+Goal is to connect this front-end to a Java or C# backend with a MongoDB
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
