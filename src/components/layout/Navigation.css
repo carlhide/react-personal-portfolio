@@ -1,0 +1,77 @@
+nav {
+  color: rgb(204, 204, 204);
+  display: flex;
+  position: sticky;
+  min-width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 8vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 1px;
+  margin-bottom: 17px;
+  padding: 5px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 60%;
+  padding: 5px;
+  min-width: 350px;
+}
+
+.nav-links li {
+  padding: 10px;
+  border-bottom: 1px solid transparent;
+  animation: fadeout 0.5s;
+}
+
+.nav-links li:hover {
+  animation: fadein 0.5s;
+  border-bottom: 1px solid rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
+}
+
+@keyframes fadein {
+  from {
+    border-bottom: 1px solid transparent;
+    color: rgb(204, 204, 204);
+  }
+  to {
+    border-bottom: 1px solid rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    border-bottom: 1px solid rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+  }
+  to {
+    border-bottom: 1px solid transparent;
+    color: rgb(204, 204, 204);
+  }
+}
+
+.the-logo {
+  min-height: 8vh;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+img {
+  width: 75px;
+  height: 35px;
+  /* *object-fit: contain;  */
+}

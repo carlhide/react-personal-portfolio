@@ -1,0 +1,89 @@
+.form {
+  position: relative;
+  text-align: left;
+  vertical-align: 10%;
+  width: 50%;
+  min-width: 350px;
+  padding: 10px;
+  float: left;
+}
+
+.form input {
+  background-color: transparent;
+  border: 1px solid white;
+  color: rgb(235, 235, 235);
+  width: 70%;
+  float: right;
+  right: 20%;
+  margin: 0px;
+}
+
+.form button {
+  padding: 10px;
+  margin-right: 13px;
+  float: right;
+}
+
+.form textarea {
+  background-color: transparent;
+  border: 1px solid white;
+  color: rgb(235, 235, 235);
+  width: 70%;
+  float: right;
+  right: 20%;
+  height: 130px;
+  margin: 0px;
+}
+
+.form fieldset {
+  display: table-cell;
+  border: none;
+  padding: 5px;
+  margin: 20px 0px 0px 0px;
+}
+
+.form fieldset label {
+  /*  position: relative;*/
+  width: 100%;
+}
+
+.submitting-visible {
+  animation: fadein-submitting 0.5s;
+  opacity: 1;
+  color: green;
+  float: right;
+}
+
+.submitting-hidden {
+  animation: fadeout-submitting 0.5s;
+  opacity: 0;
+  color: green;
+  float: right;
+}
+
+@keyframes fadein-submitting {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout-submitting {
+  from {
+    float: "right";
+    color: "green";
+    opacity: 1;
+  }
+  to {
+    float: "right";
+    color: "green";
+    opacity: 0;
+  }
+}
+
+.form * {
+  padding: 4px;
+  margin: 8px;
+}

@@ -1,0 +1,213 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html { 
+  height: 100%;
+  width: 100%;
+  background: url(../resources/city-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: rgb(240,240,240);
+
+}
+
+
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+body{
+  padding: 5px;
+  color: rgb(235, 235, 235);
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+#root{
+  min-height: 100%;
+}
+
+/**
+*** 
+*** BEGINNING BUTTON
+***
+**/
+
+button{
+  background-color: transparent;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 0%;
+  padding: 10px;
+  margin: 3px;
+  color: rgb(235, 235, 235);
+  font-size: 18px;
+  animation: fadeout-button-on-hover 0.5s;
+
+}
+
+button:hover{
+  background-color: rgb(235, 235, 235, 0.2);
+  color: rgb(0, 0, 0);
+  animation: fadein-button-on-hover 0.5s;
+}
+
+@keyframes fadein-button-on-hover {
+  from { 
+    background-color: transparent;
+    color: rgb(235, 235, 235);
+  }
+  to  { 
+    background-color: rgb(235, 235, 235, 0.2);
+    color: black;
+  }
+}
+
+@keyframes fadeout-button-on-hover {
+  from { 
+    background-color: rgb(235, 235, 235, 0.2);
+    color: black;
+  }
+  to  { 
+    background-color: transparent;
+    color: rgb(235, 235, 235);
+  }
+}
+
+/**
+*** 
+*** END BUTTON
+***
+**/
+
+
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-wrapper{
+  margin: auto;
+  min-height: auto;
+  min-width: auto;
+  border: 1px solid #7a7a7a;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.black-trans{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.vertical-layout{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 0 auto;  
+}
+
+.vertical-layout .navigation{
+  order: 0;
+  flex: 0;
+}
+
+.vertical-layout .contents{
+  order: 1;
+  justify-items: space-around;
+  flex: 1;
+  
+}
+
+.vertical-layout .foot{
+  order: 2;
+  margin-top: auto;
+}
+
+
+.horizontal-layout{
+  position: relative;
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+
+}
+
+.horizontal-layout .left{
+  order: 1;
+  flex-grow: 2;
+  text-align: center;
+}
+
+.horizontal-layout .center{
+  order: 2;
+  flex-grow: 8;
+}
+
+.horizontal-layout .right{
+  order: 3;
+  flex-grow: 2;
+  text-align: center;
+
+}
+
+.content{
+  position: relative;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgba(20, 20, 20, 0.4);
+  margin-top: 30px;
+  padding: 20px;
+  /*min-height: 100px;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
