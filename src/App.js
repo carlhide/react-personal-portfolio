@@ -23,7 +23,7 @@ class App extends Component {
         text: "If you are interested, read about me and my experience",
       },
       projects: {
-        title: "Projects",
+        title: "Projectss",
         text: "This is the Projects page",
       },
       contact: {
