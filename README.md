@@ -2,6 +2,8 @@
 
 ## A personal portfolio.
 
-Goal is to connect this front-end to a Java or C# backend with a MongoDB
+Goal is to connect this front-end to a Java or C# (or node.js) backend with a MongoDB
+
+With the purpose of learning
 
 
