@@ -6,4 +6,4 @@ Goal is to connect this front-end to a Java or C# (or node.js) backend with a Mo
 
 With the purpose of learning
 
- ![Alt text](/resources/printscreen.jpg?raw=true "apppic")
+ ![Alt text](/src/printscreen.jpg?raw=true "apppic")
