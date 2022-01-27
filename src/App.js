@@ -5,6 +5,7 @@ import About from "./components/layout/pages/About";
 import Home from "./components/layout/pages/Home";
 import Projects from "./components/layout/pages/Projects";
 import Contact from "./components/layout/pages/Contact";
+import Testing from "./components/layout/pages/Testing";
 import Footer from './components/layout/Footer';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -23,12 +24,16 @@ class App extends Component {
         text: "If you are interested, read about me and my experience",
       },
       projects: {
-        title: "Projectss",
+        title: "Projects",
         text: "This is the Projects page",
       },
       contact: {
         title: "Contact",
         text: "I don't know, maybe you want to contact me",
+      },
+      testing: {
+        title: "testing",
+        text: "I don't know, maybe you want to test me",
       },
     };
 
@@ -44,7 +49,8 @@ class App extends Component {
               <div className="center">
                 <Switch>
                   <Route path="/" exact>
-                    <Home title={banners.home.title} text={banners.home.text} />
+                    <Home title={banners.home.title} 
+                          text={banners.home.text} />
                   </Route>
                   <Route path="/about">
                     <About
@@ -62,6 +68,12 @@ class App extends Component {
                     <Contact
                       title={banners.contact.title}
                       text={banners.contact.text}
+                    />
+                  </Route>
+                  <Route path="/testing">
+                    <Testing
+                      title={banners.testing.title}
+                      text={banners.testing.text}
                     />
                   </Route>
                 </Switch>

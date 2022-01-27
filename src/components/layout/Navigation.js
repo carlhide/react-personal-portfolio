@@ -25,6 +25,9 @@ class Navigation extends Component {
           <Link to="/contact">
             <li> Contact </li>
           </Link>
+          <Link to="/testing">
+            <li> Testing </li>
+          </Link>
         </ul>
       </nav>
     );
